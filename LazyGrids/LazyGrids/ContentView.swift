@@ -19,7 +19,7 @@ struct View1: View {
                 .bold()
                 .font(.largeTitle)
             Text("Vista 1")
-            //View2(viewModel: viewModel)
+            View2()
         }
         .padding()
         .environmentObject(viewModel) ///Gracias a esto tenemos cualquier variables que se introduzca en cualquier vista del proyecto.
@@ -31,7 +31,7 @@ struct View2: View {
     var body: some View {
         VStack{
             Text("Vista 2")
-            //View3(viewModel: viewModel)
+            View3()
         }
     }
 }
